@@ -25,8 +25,8 @@ thumbnail.o:	$(path)/thumbnail.cpp
 	$(CC) -c $(path)/thumbnail.cpp $(LIBS) -fPIC -I $(header)
 thumbnail.so:	thumbnail.o
 	$(CC) -shared -o libthumbnail.so thumbnail.o $(LIBS)
-exe: main.cpp 
-	$(CC) -o exe main.cpp -lremotesrc -lremotemp3 -lremoteWebM -lremoteAvi -lthumbnail $(LIBS) -I $(header) -L .
+exe: main/main.cpp 
+	$(CC) -o exe main/main.cpp -lremotesrc -lremotemp3 -lremoteWebM -lremoteAvi -lthumbnail $(LIBS) -I $(header) -L .
 run: exe
 	./exe
 clean:

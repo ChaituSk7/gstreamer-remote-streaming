@@ -2,3 +2,5 @@
 *.so
 exe
 *.jpg
+.gitignore
+
