@@ -1,7 +1,7 @@
 #ifndef MSGHANDLER_H
 #define MSGHANDLER_H
 
-#include "header.h"
+#include "clientheader.h"
 
 /* Creating CustomData structure for holding pipeline and loop. */
 typedef struct _CustomData{

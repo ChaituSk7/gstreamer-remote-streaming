@@ -402,7 +402,7 @@ int
 directory_set (std::string path)
 {
 
-  std::string thumbnail_path = "/home/ee212798/Desktop/remote-streaming/";
+  std::string thumbnail_path = "/home/ee212798//Desktop/gstreamer-remote-streaming/server/";
   gst_init (NULL, NULL);
   GError *error = NULL;
 

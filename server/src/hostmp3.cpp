@@ -45,7 +45,7 @@ hostmp3_pipeline (char *argv)
   g_object_set (G_OBJECT (mp3.filesrc), "location", argv, NULL);
 
   g_object_set (G_OBJECT (mp3.audio_udp_sink), "host", "10.1.137.49",
-      "port", 5000, "clients", "10.1.138.194:5000, 10.1.137.49:5000", NULL);
+      "port", 5000, "clients", "10.1.138.194:5000,10.1.137.49:5000", NULL);
   gint initial_volume = 2;
   gdouble linear_val = (initial_volume - 1) / 9.0;
   g_object_set (G_OBJECT (mp3.audio_volume), "volume", linear_val, NULL);

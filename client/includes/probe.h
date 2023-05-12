@@ -1,7 +1,7 @@
 #ifndef PROBE_H
 #define PROBE_H
 
-#include "header.h"
+#include "clientheader.h"
 #include <iostream>
 #include <string>
 

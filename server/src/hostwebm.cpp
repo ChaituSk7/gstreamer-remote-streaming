@@ -97,9 +97,9 @@ hostwebm_pipeline (char *argv)
   g_object_set (G_OBJECT (webm.source), "location", argv, NULL);
   g_object_set (G_OBJECT (webm.video_encoder), "deadline", 1, NULL);
   g_object_set (G_OBJECT (webm.udp_video_sink), "host", "10.1.137.49",
-      "port", 5000, "clients", "10.1.138.194:5000, 10.1.137.49:5000", NULL);
+      "port", 5000, "clients", "10.1.138.194:5000,10.1.137.49:5000", NULL);
   g_object_set (G_OBJECT (webm.udp_audio_sink), "host", "10.1.137.49",
-      "port", 5001, "clients", "10.1.138.194:5001, 10.1.137.49:5001", NULL);
+      "port", 5001, "clients", "10.1.138.194:5001,10.1.137.49:5001", NULL);
   gint initial_volume = 2;
   gdouble linear_val = (initial_volume - 1) / 9.0;
   g_object_set (G_OBJECT (webm.audio_volume), "volume", linear_val, NULL);

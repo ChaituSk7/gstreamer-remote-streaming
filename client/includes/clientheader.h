@@ -1,5 +1,5 @@
-#ifndef HEADER_H
-#define HEADER_H
+#ifndef CLIENTHEADER_H
+#define CLIENTHEADER_H
 #include <gst/gst.h>
 
 typedef struct _RemoteMp4 {

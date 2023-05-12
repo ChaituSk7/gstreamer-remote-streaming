@@ -45,7 +45,7 @@ host_thumbnail ()
 
   /* Set the element properties */
   g_object_set (G_OBJECT (data.source), "location",
-      "/home/ee212798/Desktop/remote-streaming/output.jpg", NULL);
+      "/home/ee212798//Desktop/gstreamer-remote-streaming/server/output.jpg", NULL);
 
   GstCaps *caps = gst_caps_new_simple ("video/x-raw", "framerate",
       GST_TYPE_FRACTION, 1, 10, "width", G_TYPE_INT, 579, "height",
@@ -57,7 +57,7 @@ host_thumbnail ()
   g_object_set (G_OBJECT (data.udp_sink), "host", "10.1.137.49", NULL);
   g_object_set (G_OBJECT (data.udp_sink), "port", 5003, NULL);
   g_object_set (G_OBJECT (data.udp_sink), "clients",
-      "10.1.138.194:5003, 10.1.137.49:5003", NULL);
+      "10.1.138.194:5003,10.1.137.49:5003", NULL);
   g_object_set (G_OBJECT (data.img_freeze), "num-buffers", 2, NULL);
 
   /* Link Elements */
