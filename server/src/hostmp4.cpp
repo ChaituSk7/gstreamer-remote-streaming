@@ -108,13 +108,13 @@ hostmp4_pipeline (char *argv)
       NULL);
   g_object_set (G_OBJECT (server_data.udp_sink_video), "port", 5000, NULL);
   g_object_set (G_OBJECT (server_data.udp_sink_video), "clients",
-      "10.1.138.194:5000,10.1.137.49:5000", NULL);
+      "10.1.138.194:5000, 10.1.137.49:5000", NULL);
 
   g_object_set (G_OBJECT (server_data.udp_sink_audio), "host", "10.1.137.49",
       NULL);
   g_object_set (G_OBJECT (server_data.udp_sink_audio), "port", 5001, NULL);
   g_object_set (G_OBJECT (server_data.udp_sink_audio), "clients",
-      "10.1.138.194:5001,10.1.137.49:5001", NULL);
+      "10.1.138.194:5001, 10.1.137.49:5001", NULL);
 
   gint initial_volume = 2;
   gdouble linear_val = (initial_volume - 1) / 9.0;
